@@ -1,0 +1,31 @@
+[
+  {
+    "address": "959930BF",
+    "description": "Battery State of Charge (SoC)",
+    "request": true,
+    "round": true,
+    "precision": 1,
+    "floatOptions": "*100"
+  },
+  {
+    "address": "1AC87AA0",
+    "description": "House power current",
+    "request": true,
+    "round": true
+  },
+  {
+    "address": "902AFAFB",
+    "description": "Battery temperature",
+    "request": true,
+    "round": true,
+    "precision": 1
+  },
+  {
+    "address": "4BC0F974",
+    "description": "gross battery capacity kwh",
+    "request": true,
+    "round": true,
+    "precision": 2,
+    "floatOptions": "/1000"
+  }
+]
