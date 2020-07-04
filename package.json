@@ -1,15 +1,18 @@
 {
-  "name": "test-rct",
+  "name": "RCT-SUN",
   "version": "1.0.0",
-  "description": "",
-  "main": "test.ts",
+  "description": "RCT-SUN is an unofficial lib for the solar system from the company RCT Power GmbH",
+  "main": "./dist/client.js",
   "dependencies": {
     "@types/node": "^14.0.9",
-    "buffer-split": "^1.0.0"
+    "buffer-split": "^1.0.0",
+    "tsc": "^1.20150623.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/client.js",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC"
