@@ -2,7 +2,7 @@
   "name": "rct-sun",
   "author": "VerHext<johannes@waigel.me>",
   "version": "1.0.0",
-  "description": "RCT-SUN is an unofficial lib for the solar system for RTC Power",
+  "description": "RCT-SUN is an unofficial lib for the solar system RTC Power",
   "main": "./dist/client.js",
   "dependencies": {
     "@types/node": "^14.0.9",
