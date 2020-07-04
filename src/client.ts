@@ -1,13 +1,19 @@
 import * as net from "net";
 import fs from "fs";
-import { ConfigItem, ClientConfig } from "./types";
+import { ConfigItem, ClientConfig, DatabaseConfig } from "./types";
 import { processCmd } from "./processCmd";
+import { sendCmdBuilder } from "./sendCmd";
+import * as mysql from "./database";
 
-const config: ClientConfig = loadConfig("./config/client.json");
-const AddresData: ConfigItem[] = loadConfig("./config/config.json");
+export const config: ClientConfig = loadConfig("./config/client.json");
+export const configDatabase: DatabaseConfig = loadConfig(
+  "./config/database.json"
+);
+export const AddresData: ConfigItem[] = loadConfig("./config/config.json");
 
 var client = new net.Socket();
 client.connect(config);
+mysql.connect(configDatabase);
 
 client.on("connect", function () {
   console.log("---------client details -----------------");
@@ -15,7 +21,14 @@ client.on("connect", function () {
   console.log(`Connected to Host ${address.address}:${address.port}`);
   console.log("--------- received data -----------------");
 
-  client.write(Buffer.from("2b010410970e9d55a3", "hex"));
+  setInterval(function () {
+    AddresData.map((item: ConfigItem) => {
+      if (item.request)
+        client.write(
+          Uint8Array.from(Buffer.from(sendCmdBuilder(item.address), "hex"))
+        );
+    });
+  }, config.refresh);
 });
 
 client.on("close", function () {

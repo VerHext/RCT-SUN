@@ -3,7 +3,7 @@ export function processCmd(cmd: Uint8Array, AddresData: any) {
   let packetSize = cmd.length;
   if (length != packetSize) return;
   //lenght of response package is correct, so check CRC
-  let crc = clacCRC(cmd);
+  let crc = calcCRC(cmd);
   if (crc.crc.toString(16) != Buffer.from(crc.crcCheck).toString("hex")) {
     return;
   }
@@ -13,7 +13,7 @@ export function processCmd(cmd: Uint8Array, AddresData: any) {
   analyzeResponse(adress, data, AddresData);
 }
 
-export function clacCRC(cmdRaw: Uint8Array) {
+export function calcCRC(cmdRaw: Uint8Array) {
   //calc CRC
   let cmd = cmdRaw.slice(1, cmdRaw.length - 2);
   let crcCheck = cmdRaw.slice(cmd.length + 1, cmdRaw.length + 3);
@@ -64,4 +64,22 @@ export function analyzeResponse(
 export function round(x: number, n: number) {
   var a = Math.pow(10, n);
   return Math.round(x * a) / a;
+}
+
+export function calcRequestCRC(cmd: Uint8Array) {
+  //calc CRC 2)
+
+  let crc = 0xffff;
+
+  cmd.forEach((b) => {
+    for (let i = 0; i < 8; i++) {
+      let bit = ((b >> (7 - i)) & 1) == 1;
+      let c15 = ((crc >> 15) & 1) == 1;
+      crc <<= 1;
+      if (+!!c15 ^ +!!bit) crc ^= 0x1021;
+    }
+    crc &= 0xffff;
+  });
+
+  return crc;
 }

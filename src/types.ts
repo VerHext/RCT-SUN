@@ -10,4 +10,12 @@ export interface ConfigItem {
 export interface ClientConfig {
   host: string;
   port: number;
+  refresh: number;
+}
+
+export interface DatabaseConfig {
+  host: string;
+  user: string;
+  password: string;
+  database: string;
 }

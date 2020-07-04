@@ -5,8 +5,10 @@
   "description": "RCT-SUN is an unofficial lib for the solar system RTC Power",
   "main": "./dist/client.js",
   "dependencies": {
+    "@types/mysql": "^2.15.14",
     "@types/node": "^14.0.9",
     "buffer-split": "^1.0.0",
+    "mysql": "^2.18.1",
     "tsc": "^1.20150623.0"
   },
   "devDependencies": {},
