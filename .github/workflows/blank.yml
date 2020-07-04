@@ -27,11 +27,11 @@ jobs:
           export ARTIFACT_ID=$(cat package.json | grep name | head -1 | awk -F: '{ print $2 }' | sed 's/[",]//g' | tr -d '[[:space:]]')
           echo "::set-env name=ARTIFACT_ID::${ARTIFACT_ID}"
       - name: docker build
-        run: docker build --tag docker.pkg.github.com/${secrets.GITHUB_REPOSITORY}/${ARTIFACT_ID}:${VERSION} .
+        run: docker build --tag docker.pkg.github.com/${secrets.REPOSITORY}/${ARTIFACT_ID}:${VERSION} .
 
       - name: docker push github
         run: |
           echo ${GITHUB_TOKEN} | docker login docker.pkg.github.com -u ${GITHUB_REPOSITORY_OWNER} --password-stdin
-          docker push docker.pkg.github.com/${secrets.GITHUB_REPOSITORY}/${ARTIFACT_ID}:${VERSION}
+          docker push docker.pkg.github.com/${secrets.REPOSITORY}/${ARTIFACT_ID}:${VERSION}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
