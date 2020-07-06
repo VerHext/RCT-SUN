@@ -5,7 +5,8 @@
     "request": true,
     "round": true,
     "precision": 1,
-    "floatOptions": "*100"
+    "floatOptions": "*100",
+    "dbFloat": true
   },
   {
     "address": "1AC87AA0",
@@ -18,7 +19,8 @@
     "description": "Battery temperature",
     "request": true,
     "round": true,
-    "precision": 1
+    "precision": 1,
+    "dbFloat": true
   },
   {
     "address": "4BC0F974",
@@ -27,5 +29,23 @@
     "round": true,
     "precision": 2,
     "floatOptions": "/1000"
+  },
+  {
+    "address": "DB11855B",
+    "description": "DC input A power [W], Float",
+    "request": true,
+    "round": false
+  },
+  {
+    "address": "0CB5D21B",
+    "description": "DC input B power [W], Float",
+    "request": true,
+    "round": false
+  },
+  {
+    "address": "91617C58",
+    "description": " Public grid power (house connection, negative by feed-in) [W], Float",
+    "request": true,
+    "round": false
   }
 ]

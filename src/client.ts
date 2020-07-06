@@ -3,17 +3,15 @@ import fs from "fs";
 import { ConfigItem, ClientConfig, DatabaseConfig } from "./types";
 import { processCmd } from "./processCmd";
 import { sendCmdBuilder } from "./sendCmd";
-import * as mysql from "./database";
+require("dotenv").config();
+import * as sql from "./database";
 
 export const config: ClientConfig = loadConfig("./config/client.json");
-export const configDatabase: DatabaseConfig = loadConfig(
-  "./config/database.json"
-);
 export const AddresData: ConfigItem[] = loadConfig("./config/config.json");
 
 var client = new net.Socket();
 client.connect(config);
-mysql.connect(configDatabase);
+sql.migrate();
 
 client.on("connect", function () {
   console.log("---------client details -----------------");

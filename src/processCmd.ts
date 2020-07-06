@@ -1,3 +1,5 @@
+import * as db from "./database";
+import { ConfigItem } from "./types";
 export function processCmd(cmd: Uint8Array, AddresData: any) {
   let length = cmd[1] + cmd[2];
   let packetSize = cmd.length;
@@ -36,11 +38,11 @@ export function calcCRC(cmdRaw: Uint8Array) {
 export function analyzeResponse(
   address: Uint8Array,
   data: Uint8Array,
-  AddresData: any
+  AddresData: ConfigItem[]
 ) {
   let addressS = Buffer.from(address).toString("hex").toUpperCase();
 
-  AddresData.map((item: any) => {
+  AddresData.map((item: ConfigItem) => {
     let dataF = new Buffer(
       Buffer.from(data).toString("hex"),
       "hex"
@@ -57,6 +59,7 @@ export function analyzeResponse(
       }
 
       console.log(`[LOG] ${item.description} :: ${dataF}`);
+      db.saveValue(item.address, dataF);
     }
   });
 }

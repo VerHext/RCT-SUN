@@ -5,6 +5,7 @@ export interface ConfigItem {
   round?: boolean;
   precision?: number;
   floatOptions?: string;
+  dbFloat?: boolean;
 }
 
 export interface ClientConfig {
