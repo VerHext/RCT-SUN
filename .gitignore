@@ -2,3 +2,4 @@ node_modules
 dist
 config/database.json
 .env
+npm-lib/dist

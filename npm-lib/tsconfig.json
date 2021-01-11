@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./lib/**/*", "lib/profile/types/.type.ts"],
+  "exclude": ["node_modules", "./lib/**/*.test.ts"],
+  "assets": ["./lib/config.json"]
+}

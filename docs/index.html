@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>rct-sun 0.0.1 | Documentation</title>
+  <meta name='description' content='RCT-SUN - send and receive commands to rct power device (solar system)'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>rct-sun</h3>
+          <div class='mb1'><code>0.0.1</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#introduction'
+                  class="h5 bold black caps">
+                  Introduction
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#modules'
+                  class="h5 bold black caps">
+                  modules
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rctclient'
+                  class="">
+                  RCTClient
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#types'
+                  class="h5 bold black caps">
+                  types
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rctevents'
+                  class="">
+                  RCTEvents
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#interfaces'
+                  class="h5 bold black caps">
+                  interfaces
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rctclientresponse'
+                  class="">
+                  RCTClientResponse
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#receivedmessage'
+                  class="">
+                  ReceivedMessage
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#socketconnection'
+                  class="">
+                  SocketConnection
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#commands'
+                  class="h5 bold black caps">
+                  Commands
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#connect'
+                  class="">
+                  connect
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#disconnect'
+                  class="">
+                  disconnect
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#on'
+                  class="">
+                  on
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#send'
+                  class="">
+                  send
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#'
+                  class="">
+                  
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='introduction' class='mt0'>
+    Introduction
+  </h2>
+
+  
+    <h3>RCT-SUN is a client library for the RCT power inverter</h3> 
+Statistics is great. This libary allows to connect with nodejs to the rct power inverter.<br/>
+And to query values via commands. The transport is based on a net moduel (TCPSocket). In this libary it is possible to send any "read" request. <br/>
+It is officially also possible to make settings on the inverter, but this function is not recommended and is not supported by this lib. <br/>
+<br/>
+<div style="background-color: #FAA33A; width: 80%; padding: 4px 20px 20px 20px; color: white">
+<h2>Disclaimer:</h2>
+This library is not approved or verified by <a href="https://www.rct-power.com/">RCT Power GmbH</a>. <br/>
+It is strongly recommended to send read only requests. <br/>
+I and <a href="https://www.rct-power.com/">RCT Power GmbH</a> are not liable for any damages that may occur.</div>
+
+  
+</section></div>
+          
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='modules' class='mt0'>
+    modules
+  </h2>
+
+  
+    
+
+  
+</section></div>
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rctclient'>
+      RCTClient
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The RCTClient is the bridge between your rct power inverter and this lib.<br/>
+The first step is to implement this RCTClient and connect it to your rct power inverter.<br/></p>
+
+    <div class='pre p1 fill-light mt0'>RCTClient</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">let</span> client = RCTClient();
+client.connect({
+<span class="hljs-attr">port</span>: <span class="hljs-number">8899</span>, <span class="hljs-comment">//default 8899 </span>
+<span class="hljs-attr">reconnect</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// recommend: Allow this lib to automatic reconnect if connection lose or RCT close session.</span>
+<span class="hljs-attr">host</span>: <span class="hljs-string">"192.168.1.2"</span>, <span class="hljs-comment">// The IP Adress of your rct-power inverter. You can find it out via the offical APP or in your router</span>
+})</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='types' class='mt0'>
+    types
+  </h2>
+
+  
+    
+
+  
+</section></div>
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rctevents'>
+      RCTEvents
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>List of avaible Events
+<strong>incomming</strong> - receive data from rct-power</p>
+
+    <div class='pre p1 fill-light mt0'>RCTEvents</div>
+  
+    <p>
+      Type:
+      <code>"incomming"</code>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='interfaces' class='mt0'>
+    interfaces
+  </h2>
+
+  
+    
+
+  
+</section></div>
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rctclientresponse'>
+      RCTClientResponse
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>RCTClientResponse</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>connected</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>?)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>destroyed</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>?)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>exception</span> <code class='quiet'>(any)</code>
+          
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='receivedmessage'>
+      ReceivedMessage
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>ReceivedMessage</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array">Uint8Array</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array">Uint8Array</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>dataString</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>addressString</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>dataNumber</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>?)</code>
+          : // if avaible
+
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='socketconnection'>
+      SocketConnection
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>SocketConnection</div>
+  
+    <p>
+      Type:
+      SocketConnectOpts
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='commands' class='mt0'>
+    Commands
+  </h2>
+
+  
+    <p>This is a list of all available commands. That I have found. Feel free to add or correct them.</p>
+<i>For more information, you can contact RCT Power GmbH directly, they can send you the documentation if necessary.</i>
+<br/> 
+<a class="btn btn-info" href="/assets/cmd.csv">
+    </i> Download as CSV
+</a>
+<div style="padding-top: 20px" id='table-container'></div>
+<script type="text/javascript" src="csv-to-html-table/js/jquery.min.js"></script>
+<script type="text/javascript" src="csv-to-html-table/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="csv-to-html-table/js/jquery.csv.min.js"></script>
+<script type="text/javascript" src="csv-to-html-table/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="csv-to-html-table/js/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="csv-to-html-table/js/csv_to_html_table.js"></script>
+<script>
+CsvToHtmlTable.init({
+  csv_path: '/assets/cmd.csv', 
+  element: 'table-container', 
+  allow_download: false,
+  csv_options: {separator: ',', delimiter: '"'},
+  datatables_options: {"paging": false}
+});
+</script>
+
+  
+</section></div>
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='connect'>
+      connect
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Opens a new tcp socket and try to connect to the rct-power inverter.</p>
+
+    <div class='pre p1 fill-light mt0'>connect</div>
+  
+    <p>
+      Type:
+      function (config: <a href="#socketconnection">SocketConnection</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#rctclientresponse">RCTClientResponse</a>>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>config</span> <code class='quiet'>(<a href="#socketconnection">SocketConnection</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#rctclientresponse">RCTClientResponse</a>></code>:
+        Promise
+<RCTClientResponse>
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='disconnect'>
+      disconnect
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Disconnect and close / destroy socket.</p>
+
+    <div class='pre p1 fill-light mt0'>disconnect</div>
+  
+    <p>
+      Type:
+      function (): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#rctclientresponse">RCTClientResponse</a>>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#rctclientresponse">RCTClientResponse</a></code>:
+        RCTClientResponse
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='on'>
+      on
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Listen to RCT events. Here you can find a list with all Events <a href="#RCTEvents">RCTEvents</a></p>
+
+    <div class='pre p1 fill-light mt0'>on</div>
+  
+    <p>
+      Type:
+      function (event: <a href="#rctevents">RCTEvents</a>, callback: any): EventEmitter
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>events</span> <code class='quiet'>(<a href="#rctevents">RCTEvents</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>EventEmitter</code>:
+        EventEmitter
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>client.on(<span class="hljs-string">"incomming"</span>, (cmd: ReceivedMessage) =&gt; {
+<span class="hljs-built_in">console</span>.log(cmd);
+});</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='send'>
+      send
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Send requests to the rct power inverter <strong>You can find a list of commands here <a href="#commands">Commands</a></strong></p>
+
+    <div class='pre p1 fill-light mt0'>send</div>
+  
+    <p>
+      Type:
+      function (address: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array">Uint8Array</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>address</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array">Uint8Array</a>))</code>
+	    // Use the command hash
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>></code>:
+        status
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>client
+.send(<span class="hljs-string">"EFF4B537"</span>) <span class="hljs-comment">// this is the hash for total houshold energy (Wh)</span>
+.then(<span class="hljs-function">(<span class="hljs-params">status</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Send request successful"</span>));
+.catch(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> <span class="hljs-built_in">console</span>.error)</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id=''>
+      
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This catch - ignore bad or invalid request who are incomming over tcp socket.
+Messages are invalid if CRC or packet size are invalid or not present.
+But also commands for device settings etc. Not supported by this lib at the moment.</p>
+
+    <div class='pre p1 fill-light mt0'></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>

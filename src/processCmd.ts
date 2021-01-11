@@ -1,5 +1,6 @@
 import * as db from "./database";
 import { ConfigItem } from "./types";
+
 export function processCmd(cmd: Uint8Array, AddresData: any) {
   let length = cmd[1] + cmd[2];
   let packetSize = cmd.length;

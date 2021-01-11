@@ -1,0 +1,46 @@
+toc:
+  - name: Introduction
+    description: |
+      <h3>RCT-SUN is a client library for the RCT power inverter</h3> 
+      Statistics is great. This libary allows to connect with nodejs to the rct power inverter.<br/>
+      And to query values via commands. The transport is based on a net moduel (TCPSocket). In this libary it is possible to send any "read" request. <br/>
+      It is officially also possible to make settings on the inverter, but this function is not recommended and is not supported by this lib. <br/>
+
+      <br/>
+      <div style="background-color: #FAA33A; width: 80%; padding: 4px 20px 20px 20px; color: white">
+      <h2>Disclaimer:</h2>
+      This library is not approved or verified by <a href="https://www.rct-power.com/">RCT Power GmbH</a>. <br/>
+      It is strongly recommended to send read only requests. <br/>
+      I and <a href="https://www.rct-power.com/">RCT Power GmbH</a> are not liable for any damages that may occur.</div>
+  - name: modules
+  - RCTClient
+  - name: types
+  - RCTEvents
+  - name: interfaces
+  - RCTClientResponse
+  - ReceivedMessage
+  - SocketConnection
+  - name: Commands
+    description: |
+      <p>This is a list of all available commands. That I have found. Feel free to add or correct them.</p>
+      <i>For more information, you can contact RCT Power GmbH directly, they can send you the documentation if necessary.</i>
+      <br/> 
+      <a class="btn btn-info" href="/assets/cmd.csv">
+          </i> Download as CSV
+      </a>
+      <div style="padding-top: 20px" id='table-container'></div>
+      <script type="text/javascript" src="csv-to-html-table/js/jquery.min.js"></script>
+      <script type="text/javascript" src="csv-to-html-table/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="csv-to-html-table/js/jquery.csv.min.js"></script>
+      <script type="text/javascript" src="csv-to-html-table/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="csv-to-html-table/js/dataTables.bootstrap.js"></script>
+      <script type="text/javascript" src="csv-to-html-table/js/csv_to_html_table.js"></script>
+      <script>
+      CsvToHtmlTable.init({
+        csv_path: '/assets/cmd.csv', 
+        element: 'table-container', 
+        allow_download: false,
+        csv_options: {separator: ',', delimiter: '"'},
+        datatables_options: {"paging": false}
+      });
+      </script>

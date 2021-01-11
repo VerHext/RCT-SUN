@@ -1,0 +1,675 @@
+cmdHash,cmdName,type,description
+104EB6A,rb485.f_grid[2],float,Grid phase 3 frequency [Hz]
+16109E1,grid_mon[0].u_over.time,float,Max. voltage switch-off time level 1 [s]
+1676FA6,battery.cells_stat[3],string,battery.cells_stat[3]
+19C0B60,cs_neg[2],float,Miltiply value of the current sensor 2 by
+31A6110,energy.e_exmonth,float,External month energy [Wh]
+39BDE11,hw_test.state,uint8,hw_test.state
+3A39CA2,g_sync.p_ac_load[0],float,g_sync.p_ac_load[0]
+3D9C51F,battery.cells_stat[0].u_max.value,float,battery.cells_stat[0].u_max.value
+56162CA,battery.cells_stat[4].u_min.time,uint32,battery.cells_stat[4].u_min.time
+56417DF,battery.cells_stat[3].max.index,uint8,battery.cells_stat[3].max.index
+58F1759,hw_test.bpower[6],float,hw_test.bpower[6]
+5C7CFB1,logger.day_egrid_load_log_ts,int32,logger.day_egrid_load_log_ts
+64A60FE,battery.cells_stat[4].max.index,uint8, battery.cells_stat[4].max.index
+64E4340,logger.minutes_ubalog_ts,int32,logger.minutes_ubalog_ts
+6A9FFA2,battery.charged_amp_hours,float,Total charge flow into battery [Ah]
+6E03755,wifi.ip,string,IP Address
+7367B64,rb485.phase_marker,int16,Next phase after phase 1 in Power Switch
+77692DE,battery.cells_stat[4].u_max.index,uint8,battery.cells_stat[4].u_max.index
+7C61FAD,adc.u_ref_1_5v[0],uint16,Reference voltage 1 [V]
+8679611,net.id,uint32,net.id
+86C75B0,battery.stack_software_version[3],uint32,Software version stack 3
+875C906,hw_test.btime[2],float,hw_test.btime[2]
+95AFAA8,logger.minutes_ul3_log_ts,int32,logger.minutes_ul3_log_ts
+9923C1E,battery.cells_stat[3].min.index,uint8,battery.cells_stat[3].min.index
+A04CA7F,g_sync.u_zk_n_avg,float,Negative buffer capacitor voltage [V]
+AA372CE,p_rec_req[1],float,Required battery to grid power [W]
+AFDD6CF,acc_conv.i_acc_lp_fast,float,Battery current [A]
+BA16A10,wifi.sockb_protocol,enum,wifi.sockb_protocol
+C3815C2,net.load_reduction,float,net.load_reduction
+C588B75,energy.e_exday_sum,float,energy.e_exday_sum
+CB5D21B,dc_conv.dc_conv_struct[1].p_dc_lp,float,Solar generator B power [W]
+CBA34B9,nsm.u_q_u[3],float,High voltage max. point [V]
+CC4BDAA,detecphase_shifenable,bool,Enable active island detection
+CFA8BC4,battery.stack_cycles[1],uint16,battery.stack_cycles[1]
+DACF21B,battery.cells_stat[4],string,battery.cells_stat[4]
+DE3D20D,battery.status2,int32,Battery extra status
+DF164DE,logger.day_eb_log_ts,int32,logger.day_eb_log_ts
+DF45696,io_board.io1_polarity,bool,Inverted signal on input I/O 1
+E0505B4,flash_rtc.time_stamp_set,uint32,Set date/time
+E799A56,io_board.rse_table[0],float,K4..K1: 0000
+EF60C7E,battery.cells_stat[3].u_max.value,float,battery.cells_stat[3].u_max.value
+F28E2E1,energy.e_extotal_sum,float,energy.e_extotal_sum
+FA29566,logger.minutes_ub_log_ts,int32,logger.minutes_ub_log_ts
+FB40090,io_board.check_rs485_result,uint8,io_board.check_rs485_result
+10842019,nsm.cos_phi_p[3][1],float,Point 4 [cos(� )]
+1089ACA9,nsm.u_q_u[0],float,Low voltage min. point [V]
+108FC93D,max_phase_shift,float,Max. phase shift from 120° position [degrees]
+10970E9D,energy.e_ac_month,float,Month energy [Wh]
+1156DFD0,power_mng.battery_power,float,Battery discharge power [W]
+120EC3B4,battery.cells_stat[4].u_min.index,uint8,battery.cells_stat[4].u_min.index
+126ABC86,energy.e_grid_load_month,float,Month energy grid load [Wh]
+132AA71E,logger.minutes_temp2_log_ts,int32,logger.minutes_temp2_log_ts
+1348AB07,battery.cells[4],string,battery.cells[4]
+147E8E26,g_sync.p_ac[1],float,AC2
+14C0E627,wifi.password,string,WiFi password
+14FCA232,nsm.rpm_lock_oupower,float,Reactive Power Mode lock-out power [P/Pn]
+162491E8,battery.module_sn[5],string,Module 5 Serial Number
+16A1F844,battery.bms_sn,string,BMS Serial Number
+16AF2A92,db.power_board.CurrenMean,float,db.power_board.CurrenMean
+16B28CCA,adc.u_ref_1_5v[1],uint16,Reference voltage 2 [V]
+173D81E4,rb485.version_boot,uint32,Power Switch bootloader version
+17E3AF97,db.power_board.adc_p9V_meas,float,db.power_board.adc_p9V_meas
+18D1E9E0,battery.cells_stat[5].u_max.index,uint8,battery.cells_stat[5].u_max.index
+18F98B6D,battery.cells_stat[3].u_min.value,float,battery.cells_stat[3].u_min.value
+19608C98,partition[3].lasid,int32,partition[3].lasid
+19B814F2,logger.year_egrid_feed_log_ts,int32, logger.year_egrid_feed_log_ts
+1ABA3EE8,p_rec_req[0],float,Required compensation power [W]
+1AC87AA0,g_sync.p_ac_load_sum_lp,float,Load household - external Power[W]
+1B39A3A3,battery.bms_power_version,uint32,Software version BMS Power
+1B5445C4,io_board.check_rse_result,uint16,io_board.check_rse_result
+1BFA5A33,energy.e_grid_load_total_sum,float,energy.e_grid_load_total_sum
+1C4A665F,grid_pll[0].f,float,Grid frequency [Hz]
+1D0623D6,wifi.dns_address,string,DNS address
+1D2994EA,power_mng.soc_charge_power,float,Maintenance charge power [W]
+1D49380A,logger.minutes_eb_log_ts,int32,logger.minutes_eb_log_ts
+1E5FCA70,battery.maximum_charge_current,float,Max. charge current [A]
+1F73B6A4,battery.cells_stat[3].max.time,uint32,battery.cells_stat[3].max.time
+1F9CBBF2,db.power_board.Calibr_Value_Mean,float,db.power_board.Calibr_Value_Mean
+1FEB2F67,switch_on_cond.u_min,float,Min. voltage
+2082BFB6,hw_test.btime[9],float,hw_test.btime[9]
+21879805,logger.minutes_eac1_log_ts,int32,logger.minutes_eac1_log_ts
+21961B58,battery.current,float,Battery current [A]
+21E1A802,energy.e_dc_month_sum[1],float,energy.e_dc_month_sum[1]
+21EE7CBB,rb485.u_l_grid[2],float,Grid phase 3 voltage [V]
+2266DCB8,flash_rtc.rtc_mcc_quartz_max_diff,float,Maximum allowed quartz frequency difference between RTC and Microcontroller [ppm]
+234B4736,fault[1].flt,uint32,Error bit field 2
+234DD4DF,switch_on_cond.f_min,float,Min. frequency
+23E55DA0,battery.cells_stat[5],string,battery.cells_stat[5]
+23F525DE,net.command,uint16,net.command
+24150B85,g_sync.u_zk_sum_mov_avg,float,Actual DC link voltage [V]
+241F1F98,energy.e_dc_day_sum[1],float,energy.e_dc_day_sum[1]
+2545E22D,g_sync.u_l_rms[2],float,AC voltage phase 3 [V]
+257B5945,battery.cells_stat[2].u_min.index,uint8,battery.cells_stat[2].u_min.index
+257B7612,battery.module_sn[3],string,Module 3 Serial Number
+26260419,nsm.cos_phi_p[1][0],float,Point 2 [P/Pn]
+26363AAE,battery.cells_stat[1].max.index,uint8,battery.cells_stat[1].max.index
+265EACF6,battery.cells_stat[2].max.time,uint32,battery.cells_stat[2].max.time
+26EFFC2F,energy.e_grid_feed_year,float,Year energy grid feed-in [Wh]
+2703A771,cs_struct.is_tuned,bool,Current sensors are tuned
+27650FE2,rb485.version_main,uint32,Power Switch software version
+2788928C,g_sync.p_ac_load[1],float,g_sync.p_ac_load[1]
+27BE51D9,g_sync.p_ac_sc[0],float,Grid power phase 1 [W]
+27C39CEA,battery.stack_cycles[6],uint16,battery.stack_cycles[6]
+27C828F4,energy.e_grid_feed_total_sum,float,energy.e_grid_feed_total_sum
+27EC8487,performance_free[0],uint32,performance_free[0]
+2848A1EE,grid_offset,float,grid_offset
+29BDA75F,display_struct.brightness,uint8,Display brightness
+29CA60F8,io_board.rse_table[10],float,K4..K1: 1010
+2A30A97E,battery.stack_cycles[5],uint16,battery.stack_cycles[5]
+2A449E89,logger.year_log_ts,int32,logger.year_log_ts
+2AACCAA7,battery.max_cell_voltage,float,battery.max_cell_voltage
+2AE703F2,energy.e_dc_day[0],float,Solar generator A day energy [Wh]
+2BC1E72B,battery.discharged_amp_hours,float,Total charge flow from battery [Ah]
+2E06172D,net.netunnel_id,uint32,net.netunnel_id
+2E0C6220,io_board.home_relay_sw_off_delay,float,Switching off delay [s]
+2ED89924,db.power_board.afi_t300,float,AFI 300 mA switching off time [s]
+2F0A6B15,logger.month_ea_log_ts,int32,logger.month_ea_log_ts
+2F3C1D7D,energy.e_load_day,float,Household day energy [Wh]
+3044195F,grid_mon[1].u_under.time,float, Min. voltage switch-off time level 2 [s]
+315D1490,power_mng.baempty_full,uint8,Bit 0 - battery was empty - bit 1 - battery was full
+31ED1B75,modbus.mode,enum,RS485 working mode
+32CD0DB3,nsm.cos_phi_p[0][1],float,Point 1 [cos( )]
+331D0689,battery.cells_stat[2].max.value,float,battery.cells_stat[2].max.value
+336415EA,battery.cells_stat[0].max.time,uint32,battery.cells_stat[0].max.time
+3390CC2F,switch_on_cond.testime_fault,float,Switching on time after any grid fault [s]
+33F76B78,nsm.p_u[0][1],float,Point 1 voltage [V]
+34A164E7,battery.cells_stat[0],string,battery.cells_stat[0]
+34E33726,battery.cells_stat[2].u_max.index,uint8,battery.cells_stat[2].u_max.index
+34ECA9CA,logger.year_eb_log_ts,int32,logger.year_eb_log_ts
+3500F1E8,net.index,int8,net.index
+3503B92D,battery.cells_stat[3].u_max.time,uint32,battery.cells_stat[3].u_max.time
+3515F4A0,nsm.p_u[3][1],float,Point 4 voltage [V]
+360BDE8A,nsm.startup_grad,float,Startup gradient [P/(Pn*s)]
+36214C57,net.prev_k,float,net.prev_k
+3623D82A,prim_sm.island_flag,uint16,Grid-separated
+365D12DA,p_rec_req[2],float,Required Pac [W]
+36A9E9A6,power_mng.use_grid_power_enable,bool,Utilize external Inverter energy
+37F9D5CA,fault[0].flt,uint32,Error bit field 1
+381B8BF9,battery.soh,float,SOH (State of Health)
+383A3614,db.power_board.afi_i60,float,AFI 60 mA threshold [A]
+3903A5E9,flash_rtc.flag_time_auto_switch,bool,Automatically adjust clock for daylight saving time
+3906A1D0,logger.minutes_eexlog_ts,int32,logger.minutes_eexlog_ts
+3A0EA5BE,power_spring_up,float,power_spring_up
+3A3050E6,grid_lt.threshold,float,Max. voltage [V]
+3A444FC6,g_sync.s_ac_lp[0],float,Apparent power phase 1 [VA]
+3A7D5F53,battery.cells_stat[1].u_max.value,float,battery.cells_stat[1].u_max.value
+3A873343,energy.e_ac_day_sum,float,energy.e_ac_day_sum
+3A9D2680,energy.e_exyear_sum,float,energy.e_exyear_sum
+3AA565FC,net.package,string,net.package
+3AFEF139,prim_sm.is_thin_layer,bool,Thin-film solar module
+3B0C6A53,bamng_struct.profile_pdc_max,string,bamng_struct.profile_pdc_max
+3B5F6B9D,rb485.f_wr[0],float,Power Storage phase 1 frequency [Hz]
+3B7FCD47,fault[2].flt,uint32,Error bit field 3
+3BA1B77B,battery.cells_stat[3].min.value,float,battery.cells_stat[3].min.value
+3C705F61,io_board.rse_table[8],float,K4..K1: 1000
+3C87C4F5,energy.e_grid_feed_day,float,Day energy grid feed-in [Wh]
+3CA8E8D0,hw_test.btime[0],float,hw_test.btime[0]
+3CB1EF01,grid_mon[0].u_under.threshold,float,Min. voltage level 1 [V]
+3D789979,hw_test.bpower[7],float,hw_test.bpower[7]
+3DBCC6B4,io_board.rse_table[6],float,K4..K1: 0110
+3E722B43,grid_mon[1].f_under.threshold,float,Min. frequency level 2 [Hz]
+3E728842,power_spring_bat,float,power_spring_bat
+3EFEB931,db.power_board.relays_state,uint16,db.power_board.relays_state
+3F98F58A,battery.cells_stat[5].max.index,uint8,battery.cells_stat[5].max.index
+400F015B,g_sync.p_acc_lp,float,Battery power [W]
+4077335D,g_sync.s_ac_lp[1],float,Apparent power phase 2 [VA]
+40FF01B7,battery.cells[6],string,battery.cells[6]
+41B11ECF,battery.cells_stat[3].u_min.index,uint8,battery.cells_stat[3].u_min.index
+428CCF46,battery.cells_stat[5].u_min.value,float,battery.cells_stat[5].u_min.value
+431509D1,logger.month_eload_log_ts,int32,logger.month_eload_log_ts
+43257820,g_sync.p_ac[0],float,AC1
+437B8122,rb485.available,bool, Power Switch is available
+4397D078,nsm.cos_phi_p[1][1],float,Point 2 [cos(� )]
+43CD0B6F,nsm.pf_delay,float,Delay time after P(f) [s]
+43F16F7E,flash_state,uint16,Flash state
+43FF47C3,db.power_board.afi_t60,float,AFI 60 mA switching off time [s]
+442A3409,battery.cells_stat[4].min.time,uint32,battery.cells_stat[4].min.time
+4443C661,battery.cells_stat[0].max.index,uint8,battery.cells_stat[0].max.index
+44D4C533,energy.e_grid_feed_total,float,Total energy grid feed-in [Wh]
+4539A6D4,can_bus.bms_update_response[0],uint32,can_bus.bms_update_response[0]
+46635546,net.n_descendants,int8,Number of descendant slaves
+46892579,flash_param.write_cycles,uint32,Write cycles of flash parameters
+474F80D5,iso_struct.Rn,float,Insulation resistance on negative DC input [Ohm]
+485AD749,g_sync.u_ptp_rms[1],float,Phase to phase voltage 2 [V]
+488052BA,logger.minutes_ul2_log_ts,int32,logger.minutes_ul2_log_ts
+48D73FA5,g_sync.i_dr_lp[2],float,Current phase 3 (average) [A]
+494FE156,power_spring_offset,float,power_spring_offset
+495BF0B6,energy.e_dc_year_sum[0],float,energy.e_dc_year_sum[0]
+4A61BAEE,nsm.p_u[3][0],float,Point 4 P/Pn
+4B51A539,battery.prog_sn,string,battery.prog_sn
+4BC0F974,buf_v_control.power_reduction_max_solar,float,Solar plant peak power [Wp]
+4BE02BB7,energy.e_load_day_sum,float,energy.e_load_day_sum
+4C12C4C7,cs_neg[1],float,Miltiply value of the current sensor 1 by
+4C14CC7C,logger.year_ea_log_ts,int32,logger.year_ea_log_ts
+4C2A7CDC,nsm.cos_phi_p[2][1],float,Point 3 [cos(� )]
+4C374958,nsm.startup_grad_after_fault,float,Startup gradient after fault [P/(Pn*s)]
+4CB7C0DC,battery.min_cell_voltage,float,battery.min_cell_voltage
+4D985F33,battery.cells_stat[5].u_max.value,float,battery.cells_stat[5].u_max.value
+4DB1B91E,switch_on_cond.f_max,float,Max. frequency
+4E0C56F2,flash_rtc.rtc_mcc_quartz_ppm_difference,float,Quartz frequency difference between RTC and Microcontroller [ppm]
+4E2B42A4,hw_test.bpower[0],float,hw_test.bpower[0]
+4E3CB7F8,phase_3_mode,bool,3-phase feed in
+4E49AEC5,g_sync.p_ac_sum,float,Real power [W]
+4E699086,battery.module_sn[4],string,Module 4 Serial Number
+4E77B2CE,hw_test.bcycle,uint8,hw_test.bcycle
+4E9D95A6,logger.year_eexlog_ts,int32,logger.year_eexlog_ts
+4EE8DB78,energy.e_load_year_sum,float,energy.e_load_year_sum
+4F330E08,io_board.io2_usage,enum,Digital I/O 2 usage
+4F735D10,db.temp2,float,Heat sink (battery actuator) temperature [°C]
+501A162D,battery.cells_resist[5],string,battery.cells_resist[5]
+50514732,battery.cells_stat[6].u_min.index,uint8,battery.cells_stat[6].u_min.index
+508FCE78,adc.u_ref_1_5v[3],uint16,Reference voltage 4 [V]
+50B441C1,logger.minutes_ea_log_ts,int32,logger.minutes_ea_log_ts
+518C7BBE,battery.cells_stat[5].u_min.time,uint32,battery.cells_stat[5].u_min.time
+5293B668,logger.minutes_soc_log_ts,int32,logger.minutes_soc_log_ts
+537C719F,battery.cells_stat[0].max.value,float,battery.cells_stat[0].max.value
+53EF7649,nsm.p_u[0][0],float,Point 1 P/Pn
+5411CE1B,logger.minutes_ul1_log_ts,int32,logger.minutes_ul1_log_ts
+5438B68E,grid_mon[1].u_over.threshold,float,Max. voltage level 2 [V]
+54829753,p_rec_lim[1],float,Max. battery to grid power [W]
+54B4684E,g_sync.u_l_rms[1],float,AC voltage phase 2 [V]
+54DBC202,io_board.rse_table[12],float,K4..K1: 1100
+554D8FEE,logger.minutes_eac2_log_ts,int32,logger.minutes_eac2_log_ts
+5570401B,battery.stored_energy,float,Total energy flow into battery [Wh]
+55C22966,g_sync.s_ac[2],float, Apparent power phase 3 [VA]
+55DDF7BA,battery.max_cell_temperature,float,battery.max_cell_temperature
+5673D737,wifi.connecto_wifi,bool,wifi.connecto_wifi
+57429627,wifi.authentication_method,string,WiFi authentication method
+58378BD0,hw_test.btime[3],float,hw_test.btime[3]
+5867B3BE,io_board.rse_table[2],float,K4..K1: 0010
+58C1A946,io_board.check_state,uint8,io_board.check_state
+59358EB2,power_mng.maximum_charge_voltage,float,Max. battery charge voltage [V]
+5939EC5D,battery.module_sn[6],string,Module 6 Serial Number
+5952E5E6,wifi.mask,string,Netmask
+5A120CE4,battery.cells_stat[1].max.time,uint32,battery.cells_stat[1].max.time
+5A316247,wifi.mode,string,WiFi mode
+5A9EEFF0,battery.stack_cycles[4],uint16,battery.stack_cycles[4]
+5AF50FD7,battery.cells_stat[4].min.value,float,battery.cells_stat[4].min.value
+5B10CE81,power_mng.is_heiphoss,uint8,HeiPhoss mode
+5BA122A5,battery.stack_cycles[2],uint16,battery.stack_cycles[2]
+5BB8075A,dc_conv.dc_conv_struct[1].u_sg_lp,float,Solar generator B voltage [V]
+5BD2DB45,io_board.io1_s0_imp_per_kwh,int16,Number of impulses per kWh for S0 signal on I/O 1
+5CD75669,db.power_board.afi_t150,float,AFI 150 mA switching off time [s]
+5D0CDCF0,p_rec_available[2],float,Available Pac [W]
+5D1B0835,net.use_network_filter,bool,net.use_network_filter
+5D34D09D,logger.month_egrid_load_log_ts,int32,logger.month_egrid_load_log_ts
+5E540FB2,net.update_slaves,bool,Activate aut. update slaves
+5E942C62,dc_conv.dc_conv_struct[1].mpp.fixed_voltage,float,Fixed voltage Solar generator B [V]
+5EE03C45,io_board.alarm_home_relay_mode,enum,Multifunctional relay usage
+5F33284E,prim_sm.state,uint8,Inverter status
+6002891F,g_sync.p_ac_sc_sum,float,Grid power (ext. sensors) [W]
+60749E5E,battery.cells_stat[6].u_min.time,uint32,battery.cells_stat[6].u_min.time
+60A9A532,logger.day_eexlog_ts,int32,logger.day_eexlog_ts
+612F7EAB,g_sync.s_ac[1],float,Apparent power phase 2 [VA]
+61EAC702,battery.cells_stat[0].min.value,float,battery.cells_stat[0].min.value
+6213589B,battery.cells_stat[6].u_min.value,float,battery.cells_stat[6].u_min.value
+6279F2A3,db.power_board.version_boot,uint32,PIC bootloader software version
+62B8940B,dc_conv.starvoltage,float,Inverter DC-voltage start value [V]
+62D645D9,battery.cells[5],string,battery.cells[5]
+62FBE7DC,energy.e_grid_load_total,float,Total energy grid load [Wh]
+63476DBE,g_sync.u_ptp_rms[0],float,Phase to phase voltage 1 [V]
+6388556C,battery.stack_software_version[0],uint32,Software version stack 0
+6445D856,battery.cells_stat[1].u_min.index,uint8,battery.cells_stat[1].u_min.index
+6476A836,dc_conv.dc_conv_struct[0].mpp.enable_scan,bool,Enable rescan for global MPP on solar generator A
+649B10DA,battery.cells_resist[0],string,battery.cells_resist[0]
+650C1ED7,g_sync.i_dr_eff[1],float,Current phase 2 [A]
+65A44A98,flash_mem,string,flash_mem
+65B624AB,energy.e_grid_feed_month,float,Month energy grid feed-in [Wh]
+65EED11B,battery.voltage,float,Battery voltage [V]
+664A1326,io_board.rse_table[14],float,K4..K1: 1110
+669D02FE,logger.minutes_eac_log_ts,int32,logger.minutes_eac_log_ts
+6709A2F4,energy.e_ac_year_sum,float,energy.e_ac_year_sum
+67BF3003,display_struct.display_dir,bool,Rotate display
+67C0A2F5,net.slave_p_total,float,net.slave_p_total
+682CDDA1,power_mng.battery_type,enum,Battery type
+6830F6E4,io_board.rse_table[9],float,K4..K1: 1001
+68BA92E1,io_board.io2_s0_imp_per_kwh,int16,Number of impulses per kWh for S0 signal on I/O 2
+68BC034D,parameter_file,string,Norm
+68EEFD3D,energy.e_dc_total[1],float,Solar generator B total energy [Wh]
+6974798A,battery.stack_software_version[6],uint32,Software version stack 6
+69AA598A,can_bus.requested_id,int32,can_bus.requested_id
+69B8FF28,battery.cells[2],string,battery.cells[2]
+6B5A56C2,logger.month_eb_log_ts,int32,logger.month_eb_log_ts
+6BA10831,db.power_board.afi_i30,float,AFI 30 mA threshold [A]
+6BBDC7C8,line_mon.u_max,float,Max line voltage [V]
+6BFF1AF4,hw_test.bpower[2],float,hw_test.bpower[2]
+6C243F71,modbus.address,uint8,RS485 address
+6C2D00E4,io_board.rse_table[1],float,K4..K1: 0001
+6C44F721,i_dc_max,float,Max. DC-component of Iac [A]
+6CFCD774,energy.e_dc_year_sum[1],float,energy.e_dc_year_sum[1]
+6D5318C8,cs_map[1],uint8,Associate current sensor 1 with phase L
+6D7C0BF4,wifi.sockb_port,int32,
+6DB1FDDC,battery.cells_stat[4].u_min.value,float,battery.cells_stat[4].u_min.value
+6DCC4097,net.master_timeout,float,net.master_timeout
+6E1C5B78,g_sync.p_ac_lp[1],float,AC power phase 2 [W]
+6E24632E,battery.cells_stat[5].u_max.time,uint32,battery.cells_stat[5].u_max.time
+6E491B50,battery.maximum_charge_voltage,float,Max. charge voltage [V]
+6F3876BC,logger.error_log_time_stamp,int32,Time stamp for error log reading
+6FB2E2BF,db.power_board.afi_i150,float,AFI 150 mA threshold [A]
+6FD36B32,rb485.f_wr[1],float,Power Storage phase 2 frequency [Hz]
+6FF4BD55,energy.e_exmonth_sum,float,energy.e_exmonth_sum
+701A0482,dc_conv.dc_conv_struct[0].enabled,bool,Solar generator A connected
+70349444,battery.cells_stat[1].min.index,uint8,battery.cells_stat[1].min.index
+70A2AF4F,battery.bastatus,int32,battery.bastatus
+70BD7C46,logger.year_eac_log_ts,int32, logger.year_eac_log_ts
+70E28322,grid_mon[0].f_under.time,float,Min. frequency switch-off time level 1 [s]
+71196579,battery.cells_stat[5].min.index,uint8,battery.cells_stat[5].min.index
+71465EAF,nsm.cos_phi_ts,float,Time const for filter [s]
+715C84A1,adc.u_ref_1_5v[2],uint16,Reference voltage 3 [V]
+71765BD8,battery.status,int32,Battery status
+71B70DCE,hw_test.bpower[4],float,hw_test.bpower[4]
+71CB0B57,battery.cells_resist[1],string,battery.cells_resist[1]
+71E10B51,g_sync.p_ac_lp[0],float,AC power phase 1 [W]
+7232F7AF,nsm.apm,enum,Active power mode
+7268CE4D,battery.inv_cmd,uint32,battery.inv_cmd
+72ACC0BF,logger.minutes_ua_log_ts,int32,logger.minutes_ua_log_ts
+7301A5A7,flash_rtc.time_stamp_factory,uint32,Production date
+73489528,battery.module_sn[2],string,Module 2 Serial Number
+742966A6,db.power_board.afi_i300,float,AFI 300 mA threshold [A]
+74FD4609,battery.cells_stat[2],string,battery.cells_stat[2]
+75AE19ED,hw_test.hw_switch_time,float,hw_test.hw_switch_time
+7689BE6A,io_board.home_relay_sw_on_delay,float,Switching on delay [s]
+76C9A0BD,logger.minutes_soc_targ_log_ts,int32,logger.minutes_soc_targ_log_ts
+76CAA9BF,wifi.encryption_algorithm,string,wifi.encryption_algorithm
+770A6E7C,battery.cells_stat[0].u_max.index,uint8,battery.cells_stat[0].u_max.index
+777DC0EB,iso_struct.r_min,float,Minimum allowed insulation resistance [Ohm]
+77DD4364,hw_test.btime[5],float,hw_test.btime[5]
+7924ABD9,inverter_sn,string,Serial number
+792A7B79,io_board.s0_direction,enum,S0 inputs single or bidirectional
+7940547B,inv_struct.force_dh,bool,inv_struct.force_dh
+7946D888,i_dc_slow_time,float,Time for slow DC-component of Iac [s]
+79C0A724,energy.e_ac_total_sum,float,energy.e_ac_total_sum
+7A5C91F8,nsm.p_u[1][0],float,Point 2 P/Pn
+7A67E33B,can_bus.bms_update_response[1],uint32,can_bus.bms_update_response[1]
+7A9091EA,rb485.u_l_grid[1],float,Grid phase 2 voltage [V]
+7AB9B045,energy.e_dc_month[1],float,Solar generator B month energy [Wh]
+7AF779C1,nsm.pu_mode,bool,P(U) mode 0: Pn 1: Pload
+7B1F7FBE,wifi.gateway,string,Gateway
+7C556C7A,io_board.io2_polarity,bool,Inverted signal on input I/O 2
+7C78CBAC,g_sync.q_ac_sum_lp,float,Reactive power [var]
+7DA7D8B6,db.power_board.version_main,uint32,PIC software version
+7DDE352B,wifi.sockb_ip,string,wifi.sockb_ip
+7E096024,energy.e_load_total_sum,float,energy.e_load_total_sum
+7E590128,battery.cells_stat[0].u_max.time,uint32,battery.cells_stat[0].u_max.time
+7F42BB82,battery.cells_stat[6].u_max.index,uint8,battery.cells_stat[6].u_max.index
+7F813D73,fault[3].flt,uint32,Error bit field 4
+7FF6252C,battery.cells_stat[5].max.time,uint32,battery.cells_stat[5].max.time
+804A3266,battery.cells_stat[6].u_max.value,float,battery.cells_stat[6].u_max.value
+80835476,db.power_board.adc_p5V_W_meas,float,db.power_board.adc_p5V_W_meas
+812E5ADD,energy.e_dc_total_sum[1],float,energy.e_dc_total_sum[1]
+8160539D,battery.cells_stat[4].max.value,float,battery.cells_stat[4].max.value
+81AE960B,energy.e_dc_month[0],float,Solar generator A month energy [Wh]
+81AF854E,nsm.pu_use,bool,P(U) active
+82258C01,cs_neg[0],float,Miltiply value of the current sensor 0 by
+82CD1525,grid_mon[1].u_under.threshold,float,Min. voltage level 2 [V]
+82E3C121,g_sync.q_ac[1],float,Reactive power phase 2 [var]
+8320B84C,io_board.rse_data_delay,float,Delay for new K4..K1 data [s]
+83A5333A,nsm.cos_phi_p[0][0],float, Point 1 [P/Pn]
+84ABE3D8,energy.e_grid_feed_year_sum,float,energy.e_grid_feed_year_sum
+85886E2E,p_rec_lim[0],float,Max. compensation power [W]
+86782D58,hw_test.bpower[9],float,hw_test.bpower[9]
+867DEF7D,energy.e_grid_load_day,float,Day energy grid load [Wh]
+872F380B,io_board.load_set,float,Dummy household load [W]
+87E4387A,currensensor_max,float,Power Sensor current range [A]
+883DE9AB,g_sync.s_ac_lp[2],float,Apparent power phase 3 [VA]
+885BB57E,battery.cells_stat[6].min.value,float,battery.cells_stat[6].min.value
+887D43C4,g_sync.i_dr_lp[0],float,Current phase 1 (average) [A]
+889DC27F,battery.cells_stat[0].u_min.value,float,battery.cells_stat[0].u_min.value
+88BBF8CB,battery.cells_stat[5].min.value,float,battery.cells_stat[5].min.value
+88C9707B,io_board.rse_table[15],float,K4..K1: 1111
+88DEBCFE,nsm.q_u_max_u_high,float,Qmax at upper voltage level [var]
+88F36D45,io_board.rse_data,uint8,Actual K4..K1 data
+89B25F4B,battery.stack_cycles[3],uint16,battery.stack_cycles[3]
+89EE3EB5,g_sync.i_dr_eff[0],float,Current phase 1 [A]
+8A18539B,g_sync.u_zk_sum_avg,float,DC link voltage [V]
+8B9FF008,battery.soc_target,float,Target SOC
+8BB08839,battery.cells_stat[6].min.time,uint32,battery.cells_stat[6].min.time
+8CA00014,wifi.result,int8,WiFi result
+8D8E19F7,line_mon.u_min,float,Min line voltage [V]
+8DD1C728,dc_conv.dc_conv_struct[1].mpp.enable_scan,bool,Enable rescan for global MPP on solar generator B
+8DFFDD33,battery.cells_stat[3].u_min.time,uint32,battery.cells_stat[3].u_min.time
+8E41FC47,iso_struct.Rp,float,Insulation resistance on positive DC input [Ohm]
+8EBF9574,power_mng.soc_min_island,float,Min SOC target (island)
+8EC23427,battery.cells_stat[4].u_max.time,uint32,battery.cells_stat[4].u_max.time
+8EC4116E,display_struct.blink,bool,Display blinking enable
+8EF6FBBD,battery.cells[1],string,battery.cells[1]
+8EF9C9B8,battery.cells_stat[6].max.time,uint32,battery.cells_stat[6].max.time
+8F0FF9F3,p_rec_available[1],float,Available battery to grid power [W]
+8FC89B10,com_service,enum,COM service
+902AFAFB,battery.temperature,float,Battery temperature [°C]
+903FE89E,hw_test.btime[8],float,hw_test.btime[8]
+905F707B,rb485.f_wr[2],float,Power Storage phase 3 frequency [Hz]
+9061EA7B,grid_lt.granularity,float,Resolution
+90832471,battery.cells_stat[1].u_max.time,uint32,battery.cells_stat[1].u_max.time
+90B53336,temperature.sink_temp_power_reduction,float,Heat sink temperature target [°C]
+90F123FA,io_board.io1_usage,enum,Digital I/O 1 usage
+915CD4A4,grid_mon[1].f_over.threshold,float,Max. frequency level 2 [Hz]
+91617C58,g_sync.p_ac_grid_sum_lp,float,Total grid power [W]
+917E3622,energy.e_exyear,float,External year energy [Wh]
+91C325D9,battery.cells_stat[0].min.time,uint32,battery.cells_stat[0].min.time
+91FB68CD,battery.cells_stat[6].max.value,float,battery.cells_stat[6].max.value
+9214A00C,hw_test.booster_tesindex,uint8,hw_test.booster_tesindex
+921997EE,logger.month_egrid_feed_log_ts,int32,logger.month_egrid_feed_log_ts
+9247DB99,logger.minutes_egrid_load_log_ts,int32,logger.minutes_egrid_load_log_ts
+929394B7,svnversion_lasknown,string,svnversion_lasknown
+92BC682B,g_sync.i_dr_eff[2],float,Current phase 3 [A]
+933F9A24,grid_mon[0].f_over.time,float,Max. frequency switch-off time level 1 [s]
+934E64E9,switch_on_cond.u_max,float,Max. voltage
+93C0C2E2,power_mng.bacalib_reqularity,uint32,Battery calibration interval [days]
+93E6918D,nsm.f_exit,float,Exit frequency for P(f) mode [Hz]
+93F976AB,rb485.u_l_grid[0],float, Grid phase 1 voltage [V]
+940569AC,hw_test.btime[6],float,hw_test.btime[6]
+9558AD8A,rb485.f_grid[0],float,Grid phase1 frequency [Hz]
+959930BF,battery.soc,float,SOC (State of charge)
+96629BB9,can_bus.bms_update_state,uint8,can_bus.bms_update_state
+9680077F,nsm.cos_phi_p[2][0],float,Point 3 [P/Pn]
+96E32D11,flash_param.erase_cycles,uint32,Erase cycles of flash parameter
+972B3029,power_mng.stop_discharge_voltage_buffer,float,Stop discharge voltage buffer [V]
+97997C93,power_mng.soc_max,float,Max SOC target
+97E203F9,power_mng.is_grid,bool,power_mng.is_grid
+97E3A6F2,power_mng.u_acc_lp,float,Battery voltage (inverter) [V]
+98ACC1B8,io_board.rse_table[4],float,K4..K1: 0100
+99396810,battery.module_sn[1],string,Module 1 Serial Number
+993C06F6,battery.cells_resist[3],string,battery.cells_resist[3]
+9981F1AC,db.power_board.adc_m9V_meas,float,db.power_board.adc_m9V_meas
+99EE89CB,power_mng.power_lim_src_index,enum,Power limit source
+9A51A23B,logger.log_rate,uint16,Data log resolution [s]
+9A67600D,p_rec_lim[2],float,Pac max. [W]
+9B92023F,io_board.rse_table[7],float,K4..K1: 0111
+9D785E8C,battery.bms_software_version,uint32,Software version BMS Master
+9DC927AA,bamng_struct.profile_load,string,bamng_struct.profile_load
+9E1A88F5,dc_conv.dc_conv_struct[0].mpp.fixed_voltage,float,Fixed voltage Solar generator A [V]
+9E314430,battery.cells_stat[2].u_max.time,uint32,battery.cells_stat[2].u_max.time
+9F52F968,power_mng.feed_asymmetrical,bool,Allow asymmetrical feed
+A10D9A4B,battery.min_cell_temperature,float,battery.min_cell_temperature
+A1266D6B,line_mon.time_lim,float,Switch off time line voltage [s]
+A12BE39C,energy.e_load_month_sum,float,energy.e_load_month_sum
+A12E9B43,phase_marker,int16,Next phase after phase 1
+A3393749,io_board.check_start,uint8,io_board.check_start
+A33D0954,nsm.q_u_hysteresis,bool,Curve with hysteresis
+A3E48B21,battery.cells_stat[2].min.value,float,battery.cells_stat[2].min.value
+A40906BF,battery.stack_software_version[4],uint32,Software version stack 4
+A5044DCD,nsm.p_u[2][0],float,Point 3 P/Pn
+A5341F4A,energy.e_grid_feed_month_sum,float,energy.e_grid_feed_month_sum
+A54C4685,battery.stack_software_version[1],uint32,Software version stack 1
+A59C8428,energy.e_extotal,float,External total energy [Wh]
+A60082A9,logger.minutes_egrid_feed_log_ts,int32,logger.minutes_egrid_feed_log_ts
+A616B022,battery.soc_targelow,float,
+A6271C2E,grid_mon[0].u_over.threshold,float,Max. voltage level 1 [V]
+A6871A4D,battery.cells_stat[4].min.index,uint8,battery.cells_stat[4].min.index
+A6C4FD4A,battery.stack_cycles[0],uint16,battery.stack_cycles[0]
+A7447FC4,temperature.batemp_power_reduction,float,Battery actuator temperature target [°C]
+A76AE9CA,relays.bits_real,uint16,relays.bits_real
+A7C708EB,logger.minutes_eload_log_ts,int32,logger.minutes_eload_log_ts
+A7DBD28C,battery.cells_stat[2].max.index,uint8,battery.cells_stat[2].max.index
+A7FA5C5D,power_mng.u_acc_mix_lp,float,Battery voltage [V]
+A7FE5C0C,battery.cells_stat[2].min.index,uint8,battery.cells_stat[2].min.index
+A9033880,battery.used_energy,float,Total energy flow from battery [Wh]
+A95AD038,grid_mon[0].f_under.threshold,float,Min. frequency level 1 [Hz]
+A95EE214,power_mng.model.bapower_change,float,power_mng.model.bapower_change
+A9CF517D,power_spring_down,float,power_spring_down
+AA9AA253,dc_conv.dc_conv_struct[1].p_dc,float,Solar generator B power [W]
+AACAC898,battery.cells_stat[4].max.time,uint32,battery.cells_stat[4].max.time
+AACE057A,io_board.io1_s0_min_duration,float,Minimum S0 signal duration on I/O 1 [s]
+AC2E2A56,io_board.rse_table[5],float,K4..K1: 0101
+ACF7666B,battery.efficiency,float,Battery efficiency (used energy / stored energy)
+AEF76FA1,power_mng.minimum_discharge_voltage,float,Min. battery discharge voltage [V]
+AF64D0FE,energy.e_dc_year[0],float,Solar generator A year energy [Wh]
+B0041187,g_sync.u_sg_avg[1],float,Solar generator B voltage [V]
+B0307591,db.power_board.status,uint16,Power board status
+B082C4D7,hw_test.bpower[5],float,hw_test.bpower[5]
+B0EBE75A,battery.minimum_discharge_voltage,float,Min. discharge voltage [V]
+B0FA4D23,acc_conv.i_charge_max,float,Max. battery converter charge current [A]
+B1D1BE71,osci_struct.cmd_response_time,float,osci_struct.cmd_response_time
+B1EF67CE,energy.e_ac_total,float,Total energy [Wh]
+B20D1AD6,logger.day_egrid_feed_log_ts,int32,logger.day_egrid_feed_log_ts
+B221BCFA,g_sync.p_ac_sc[2],float,Grid power phase 3 [W]
+B238942F,lassuccessfull_flash_op,int16,lassuccessfull_flash_op
+B298395D,dc_conv.dc_conv_struct[0].u_sg_lp,float,Solar generator A voltage [V]
+B2FB9A90,bamng_struct.k_trust,float,How fast the actual prediction can be trusted [0..10]
+B408E40A,acc_conv.i_acc_lp_slow,float,acc_conv.i_acc_lp_slow
+B4222BDE,wifi.state,uint8,wifi.state
+B45FE275,p_rec_available[0],float,Available compensation power [W]
+B4E053D4,battery.cells_stat[1].u_min.value,float,battery.cells_stat[1].u_min.value
+B5317B78,dc_conv.dc_conv_struct[0].p_dc,float,Solar generator A power [W]
+B55BA2CE,g_sync.u_sg_avg[0],float,Solar generator A voltage [V]
+B57B59BD,battery.ah_capacity,float,Battery capacity [Ah]
+B6623608,power_mng.banexcalib_date,uint32,Next battery calibration
+B69171C4,db.power_board.CurrenAC_RMS,float,db.power_board.CurrenAC_RMS
+B76E2B4C,nsm.cos_phi_const,float,Cos phi constant value
+B7B2967F,energy.e_dc_total_sum[0],float, energy.e_dc_total_sum[0]
+B7C85C51,wifi.use_ethernet,bool,wifi.use_ethernet
+B81FB399,battery.cells_stat[2].u_min.time,uint32,battery.cells_stat[2].u_min.time
+B836B50C,dc_conv.dc_conv_struct[1].rescan_correction,float,Last global rescan MPP correction on input B [V]
+B84A38AB,battery.soc_targehigh,float,
+B84FDCF9,adc.u_acc,float,Battery voltage (inverter) [V]
+B851FA70,io_board.rse_table[11],float,K4..K1: 1011
+B98C8194,nsm.min_cos_phi,float,Minimum allowed cos(phi) [0..1]
+B9928C51,g_sync.p_ac_lp[2],float,AC power phase 3 [W]
+B9A026F9,energy.e_exday,float,External day energy [Wh]
+B9E09F78,battery.cells_stat[5].u_min.index,uint8,battery.cells_stat[5].u_min.index
+BB302278,battery.cells_stat[1].min.time,uint32,battery.cells_stat[1].min.time
+BB617E51,nsm.u_q_u[1],float,Low voltage max. point [V]
+BCA77559,g_sync.q_ac[2],float,Reactive power phase 3 [var]
+BCC6F92F,io_board.home_relay_threshold,float,Switching on threshold [W]
+BD008E29,power_mng.battery_power_extern,float,power_mng.battery_power_extern
+BD3A23C3,power_mng.soc_charge,float,SOC min maintenance charge
+BD4147B0,can_bus.secell_resist,uint32,can_bus.secell_resist
+BD55905F,energy.e_ac_day,float,Day energy [Wh]
+BD55D796,energy.e_dc_year[1],float,Solar generator B year energy [Wh]
+BDE3BF0A,battery.cells_stat[6].max.index,uint8,battery.cells_stat[6].max.index
+BDFE5547,io_board.rse_table[3],float,K4..K1: 0011
+BF9B6042,svnversion_factory,string,Control software factory version
+BFFF3CAD,net.n_slaves,uint8,net.n_slaves
+C03462F6,g_sync.p_ac[2],float,AC3
+C0680302,battery.cells_stat[2].min.time,uint32,battery.cells_stat[2].min.time
+C0A7074F,net.slave_data,string,net.slave_data
+C0B7C4D2,db.power_board.afi_t30,float, AFI 30 mA switching off time [s]
+C0CC81B6,energy.e_ac_year,float,Year energy [Wh]
+C0DF2978,battery.cycles,int32,Battery charge / discharge cycles
+C198B25B,g_sync.u_zk_p_avg,float,Positive buffer capacitor voltage [V]
+C1C82889,hw_test.bpower[1],float,hw_test.bpower[1]
+C1D051EC,display_struct.variate_contrast,uint8,display_struct.variate_contrast
+C24E85D0,db.core_temp,float,Core temperature [°C]
+C3352B17,nsm.rpm,enum,Reactive power mode
+C36675D4,i_ac_max_set,float,Maximum AC throttle current [A]
+C3A3F070,i_ac_extern_connected,bool,Current sensors detected
+C3C7325E,hw_test.btime[4],float,hw_test.btime[4]
+C40D5688,prim_sm.state_source,uint32,prim_sm.state_source
+C42F5807,battery.cells_stat[1].u_max.index,uint8,battery.cells_stat[1].u_max.index
+C46E9CA4,nsm.u_lock_out,float,Cos phi(P) lock out voltage [V]
+C55EF32E,logger.year_egrid_load_log_ts,int32,logger.year_egrid_load_log_ts
+C642B9D6,acc_conv.i_discharge_max,float,Max. battery converter discharge current [A]
+C66A522B,hw_test.btime[1],float,hw_test.btime[1]
+C6DA81A0,battery.cells_stat[6].u_max.time,uint32,battery.cells_stat[6].u_max.time
+C707102E,hw_test.bpower[3],float,hw_test.bpower[3]
+C717D1FB,iso_struct.Riso,float,Total insulation resistance [Ohm]
+C7459513,power_mng.force_inv_class,enum,Change inverter class
+C7605E16,io_board.s0_sum,float,io_board.s0_sum
+C7D3B479,energy.e_load_year,float,Household year energy [Wh]
+C8609C8E,battery.cells[3],string,battery.cells[3]
+C88EB032,battery.cells_stat[0].u_min.time,uint32,battery.cells_stat[0].u_min.time
+C8BA1729,battery.stack_software_version[2],uint32,Software version stack 2
+C9D76279,energy.e_dc_day_sum[0],float,energy.e_dc_day_sum[0]
+CA6D6472,logger.day_eload_log_ts,int32,logger.day_eload_log_ts
+CABC44CA,g_sync.s_ac[0],float,Apparent power phase 1 [VA]
+CB1B3B10,io_board.io2_s0_min_duration,float,Minimum S0 signal duration on I/O 2 [s]
+CB9E1E6C,nsm.Q_const,float,Q constant value [var]
+CBDAD315,logger.minutes_ebalog_ts,int32,logger.minutes_ebalog_ts
+CBEC8200,hw_test.timer2,float,hw_test.timer2
+CCB51399,nsm.q_u_max_u_low,float,Qmax at lower voltage level [var]
+CE266F0F,power_mng.soc_min,float,Min SOC target
+CF005C54,prim_sm.phase_3_mode,bool,prim_sm.phase_3_mode
+CF053085,g_sync.u_l_rms[0],float,AC voltage phase 1 [V]
+D0C47326,battery.cells_stat[1].min.value,float,battery.cells_stat[1].min.value
+D143A391,can_bus.secell_v_t,uint32,can_bus.secell_v_t
+D166D94D,flash_rtc.time_stamp,uint32,Actual date/time
+D197CBE0,power_mng.stop_charge_current,float,Stop charge current [A]
+D1DFC969,power_mng.soc_targeset,float,Force SOC target
+D3085D80,net.soc_av,float,net.soc_av
+D3E94E6B,logger.minutes_temp_balog_ts,int32,logger.minutes_temp_balog_ts
+D451EF88,cs_map[2],uint8,Associate current sensor 2 with phase L
+D45913EC,io_board.rse_table[13],float,K4..K1: 1101
+D4C4A941,hw_test.btime[7],float,hw_test.btime[7]
+D5205A45,net.slave_timeout,float,net.slave_timeout
+D5790CE1,wifi.use_wifi,bool,Enable Wi-Fi Access Point
+D580567B,nsm.u_lock_in,float,Cos phi(P) lock in voltage [V]
+D60E7A2F,battery.cells_stat[1].u_min.time,uint32,battery.cells_stat[1].u_min.time
+D884AF95,nsm.pf_desc_grad,float,Power decrease gradient for P(f) mode [P/(Pn*s)]
+D9D66B76,energy.e_grid_load_year_sum,float,energy.e_grid_load_year_sum
+D9E721A5,grid_lt.timeframe,float, Timeframe
+D9F9F35B,acc_conv.state_slow,uint8,acc_conv.state_slow
+DA207111,energy.e_grid_load_month_sum,float,energy.e_grid_load_month_sum
+DABD323E,osci_struct.error,int16,Communication error
+DB11855B,dc_conv.dc_conv_struct[0].p_dc_lp,float,Solar generator A power [W]
+DB2D69AE,g_sync.p_ac_sum_lp,float,AC power [W]
+DB45ABD0,dc_conv.dc_conv_struct[0].rescan_correction,float,Last global rescan MPP correction on input A [V]
+DB62DCB7,net.n_devices,uint8,net.n_devices
+DC667958,power_mng.state,uint8,Battery state machine
+DCA1CF26,g_sync.s_ac_sum_lp,float,Apparent power [VA]
+DCAC0EA9,g_sync.i_dr_lp[1],float,Current phase 2 (average) [A]
+DD5930A2,battery.cells_stat[0].min.index,uint8,battery.cells_stat[0].min.index
+DD90A328,flash_rtc.time_stamp_update,uint32,Last update date
+DDD1C2D0,svnversion,string,Control software version
+DE17F021,energy.e_grid_load_year,float,Year energy grid load [Wh]
+DE68F62D,bamng_struct.profile_pext,string,bamng_struct.profile_pext
+DE9CBCB0,battery.cells_stat[5].max.value,float,battery.cells_stat[5].max.value
+DEE1957F,battery.cells_resist[4],string,battery.cells_resist[4]
+DF0A735C,battery.maximum_discharge_current,float,Max. discharge current [A]
+DF6EA121,bamng_struct.profile_pdc,string,bamng_struct.profile_pdc
+DFB53AF3,db.power_board.CurrenMean_Mean_AC,float,db.power_board.CurrenMean_Mean_AC
+DFF966E3,battery.cells_stat[6].min.index,uint8,battery.cells_stat[6].min.index
+E04C3900,logger.day_eac_log_ts,int32,logger.day_eac_log_ts
+E0E16E63,cs_map[0],uint8,Associate current sensor 0 with phase L
+E14B8679,i_dc_slow_max,float,Max. slow DC-component of Iac [A]
+E271C6D2,nsm.u_q_u[2],float,High voltage min. point [V]
+E29C24EB,logger.minutes_eac3_log_ts,int32,logger.minutes_eac3_log_ts
+E31F8B17,prim_sm.Uzk_pump_grad[0],float,start power [W]
+E3F4D1DF,acc_conv.i_max,float,Max. battery converter current [A]
+E49BE3ED,nsm.pf_rise_grad,float,Power increase gradient after P(f) restriction [P/(Pn*s)]
+E4DC040A,logger.month_eexlog_ts,int32,logger.month_eexlog_ts
+E52B89FA,io_board.home_relay_off_threshold,float,Switching off threshold [W]
+E5FBCC6F,logger.year_eload_log_ts,int32,logger.year_eload_log_ts
+E6248312,hw_test.bpower[8],float,hw_test.bpower[8]
+E63A3529,flash_result,uint16,
+Flash resultE6AC95E5,phase_shifthreshold,uint32,Detection threshold
+E6F1CB83,nsm.pu_ts,float,Time const for filter [s]
+E7177DEE,battery.cells_stat[2].u_max.value,float,battery.cells_stat[2].u_max.value
+E94C2EFC,g_sync.q_ac[0],float,Reactive power phase 1 [var]
+E96F1844,io_board.s0_external_power,float,io_board.s0_external_power
+E9BBF6E4,power_mng.amp_hours_measured,float,Measured battery capacity [Ah]
+EAEEB3CA,energy.e_dc_month_sum[0],float,energy.e_dc_month_sum[0]
+EB4C2597,battery.cells_resist[6],string,battery.cells_resist[6]
+EB7773BF,nsm.p_u[1][1],float,Point 2 voltage [V]
+EBC62737,android_description,string,Device name
+EBF7A4E8,grid_mon[0].f_over.threshold,float,Max. frequency level 1 [Hz]
+ECABB6CF,switch_on_cond.testime,float,Test time
+EE049B1F,nsm.pf_hysteresis,bool,Hysteresis mode
+EEA3F59B,battery.stack_software_version[5],uint32,Software version stack 5
+EECDFEFC,battery.cells_stat[2].u_min.value,float,battery.cells_stat[2].u_min.value
+EF89568B,grid_mon[0].u_under.time,float,Min. voltage switch-off time level 1 [s]
+EFD3EC8A,battery.cells_stat[5].min.time,uint32,battery.cells_stat[5].min.time
+EFF4B537,energy.e_load_total,float,Household total energy [Wh]
+F044EDA0,battery.cells_stat[3].max.value,float, battery.cells_stat[3].max.value
+F0527539,db.power_board.adc_p3V3_meas,float,db.power_board.adc_p3V3_meas
+F09CC4A2,grid_mon[1].u_over.time,float,Max. voltage switch-off time level 2 [s]
+F0A03A20,bamng_struct.k,float,Forecast correction
+F0B436DD,g_sync.p_ac_load[2],float,g_sync.p_ac_load[2]
+F0BE6429,energy.e_load_month,float,Household month energy [Wh]
+F1342795,power_mng.stop_discharge_current,float,Stop discharge current [A]
+F168B748,power_mng.soc_strategy,enum,SOC target selection
+F1FA5BB9,grid_mon[1].f_under.time,float,Min. frequency switch-off time level 2 [s]
+F2405AC6,nsm.p_limit,float,Max. grid power [W]
+F247BB16,display_struct.contrast,uint8,Display contrast
+F25591AA,nsm.cos_phi_p[3][0],float,Point 4 [P/Pn]
+F257D342,battery.cells_stat[1].max.value,float,battery.cells_stat[1].max.value
+F25C339B,g_sync.u_ptp_rms[2],float,Phase to phase voltage 3 [V]
+F28341E2,logger.month_eac_log_ts,int32,logger.month_eac_log_ts
+F2BE0C9C,p_buf_available,float,Available buffer power [W]
+F393B7B0,power_mng.calib_charge_power,float,Calibration charge power [W]
+F3FD8CE6,battery.cells_resist[2],string,battery.cells_resist[2]
+F42D4DD0,io_board.alarm_home_value,enum,Evaluated value
+F473BC5E,buf_v_control.power_reduction_max_solar_grid,float,Max. allowed grid feed-in power [W]
+F49F58F2,nsm.p_u[2][1],float,Point 3 voltage [V]
+F54BC06D,battery.cells_stat[4].u_max.value,float,battery.cells_stat[4].u_max.value
+F5584F90, g_sync.p_ac_sc[1],float,Grid power phase 2 [W]
+F644DCA7,bamng_struct.k_reserve,float,Main reservation coefficient [0..2]
+F6A85818,nsm.f_entry,float,Entry frequency for P(f) mode [Hz]
+F76DE445,logger.minutes_temp_log_ts,int32,logger.minutes_temp_log_ts
+F79D41D9,db.temp1,float,Heat sink temperature [°C]
+F87A2A1E,dc_conv.lasrescan,uint32,Last global rescan
+F8C0D255,battery.cells[0],string,battery.cells[0]
+F8DECCE6,wifi.connected_ap_ssid,string,WiFi associated AP
+F99E8CC8,battery.cells_stat[6],string,battery.cells_stat[6]
+FA3276DC,battery.cells_stat[3].min.time,uint32,battery.cells_stat[3].min.time
+FA7DB323,io_board.check_s0_result,uint16,io_board.check_s0_result
+FAE429C5,rb485.f_grid[1],float,Grid phase 2 frequency [Hz]
+FB57BA65,bamng_struct.count,string,bamng_struct.count
+FB5DE9C5,prim_sm.minigrid_flag,bool,Minigrid support
+FB796780,battery.cells_stat[1],string,battery.cells_stat[1]
+FBD94C1F,power_mng.amp_hours,float,Battery energy [Ah]
+FBF3CE97,energy.e_dc_day[1],float,Solar generator B day energy [Wh]
+FBF6D834,battery.module_sn[0],string,Module 0 Serial Number
+FBF8D63C,energy.e_grid_load_day_sum,float,energy.e_grid_load_day_sum
+FC1C614E,energy.e_ac_month_sum,float,energy.e_ac_month_sum
+FC724A9E,energy.e_dc_total[0],float,Solar generator A total energy [Wh]
+FCC39293,nsm.rpm_lock_in_power,float,Reactive Power Mode lock-in power [P/Pn]
+FCF4E78D,logger.day_ea_log_ts,int32,logger.day_ea_log_ts
+FD4F17C4,grid_mon[1].f_over.time,float,Max. frequency switch-off time level 2 [s]
+FDB81124,energy.e_grid_feed_day_sum,float,energy.e_grid_feed_day_sum
+FDBD9EE9,battery.cells_stat[3].u_max.index,uint8,battery.cells_stat[3].u_max.index
+FE1AA500,buf_v_control.power_reduction,float,External power reduction based on solar plant peak power [0;1]
+FE44BA26,battery.cells_stat[0].u_min.index,uint8,battery.cells_stat[0].u_min.index
+FED51BD2,dc_conv.dc_conv_struct[1].enabled,bool,Solar generator B connected

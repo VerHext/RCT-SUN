@@ -1,0 +1,41 @@
+{
+  "name": "rct-sun",
+  "version": "0.0.1",
+  "description": "RCT-SUN - send and receive commands to rct power device (solar system)",
+  "main": "index.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc & npm run docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write **/**.ts",
+    "docs": "documentation build ./lib/ -c documentation.yml -f html -o ../docs --parse-extension ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VerHext/rct-sun.git"
+  },
+  "keywords": [
+    "rct",
+    "power",
+    "rct-sun",
+    "solar",
+    "grafana"
+  ],
+  "author": "Johannes Waigel <johannes@waigel.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VerHext/rct-sun/issues"
+  },
+  "homepage": "https://github.com/VerHext/rct-sun#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "net": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "@types/typescript": "^2.0.0",
+    "documentation": "^13.1.0"
+  }
+}
